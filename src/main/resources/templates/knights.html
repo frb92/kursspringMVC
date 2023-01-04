@@ -1,0 +1,23 @@
+<!Doctype HTML>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <title>Zaczynamy ze Springiem i Thymleaf'em</title>
+    <meta http-equiv="Content-Type" content="text/html; char">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Imię rycerza</td>
+                <td>Wiek</td>
+            </tr>
+        </thead>
+        <tbody th:each="knight: ${knights}">
+            <tr>
+                <td th:text="${knight.name}"></td>
+                <td th:text="${knight.age}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
