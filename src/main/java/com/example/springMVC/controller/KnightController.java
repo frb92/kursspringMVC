@@ -15,7 +15,7 @@ public class KnightController {
 
     @Autowired
     KnightService service;
-    @RequestMapping("/knights'")
+    @RequestMapping("/knights")
     public String getKnights(Model model){
         List<Knight> allKnights =  service.getAllKnights();
         model.addAttribute("knights", allKnights);
